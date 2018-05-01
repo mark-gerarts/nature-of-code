@@ -1,5 +1,5 @@
-(defpackage :gamekit-test (:use :cl :trivial-gamekit))
-(in-package :gamekit-test)
+(defpackage :sketch (:use :cl :trivial-gamekit))
+(in-package :sketch)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -29,19 +29,19 @@
     (vector-push-extend *walker* *previous-states*)
     (setf *walker* new-walker)))
 
-(defgame random-walker () ()
+(defgame sketch () ()
   (:viewport-width *width*)
   (:viewport-height *height*)
   (:viewport-title "Random walker"))
 
-(defmethod post-initialize ((this random-walker))
+(defmethod post-initialize ((this sketch))
   (setf *walker* (mid))
   (setf *previous-states* (empty-array)))
 
-(defmethod draw ((this random-walker))
+(defmethod draw ((this sketch))
   (loop for w across *previous-states* do (draw-walker w)))
 
-(defmethod act ((this random-walker))
+(defmethod act ((this sketch))
   (step-walker *walker*))
 
-(start 'random-walker)
+(start 'sketch)

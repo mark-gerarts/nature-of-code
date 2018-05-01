@@ -9,3 +9,4 @@ of trivial-gamekit and `(ql:quickload :trivial-gamekit)` before compiling.
 
 - [Introduction](https://github.com/mark-gerarts/nature-of-code/tree/master/Introduction)
   - [Example I.1: Traditional random walk](https://github.com/mark-gerarts/nature-of-code/tree/master/Introduction/Example%20I.1:%20Traditional%20random%20walk)
+  - [Example I.2: Random number distribution](https://github.com/mark-gerarts/nature-of-code/tree/master/Introduction/Example%20I.2:%20Random%20number%20distribution)
