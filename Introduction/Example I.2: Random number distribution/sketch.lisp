@@ -31,8 +31,6 @@
   (:viewport-height *height*)
   (:viewport-title "Random number distribution"))
 
-(defmethod post-initialize ((this sketch)))
-
 (defmethod draw ((this sketch))
   (draw-distribution (numbers this)))
 
