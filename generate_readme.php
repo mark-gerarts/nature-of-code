@@ -1,10 +1,8 @@
 <?php
 
 /**
- * Quick and dirty script that outputs a ToC based on the directory structure.
- * Useful if piped to something like xclip.
- *
- * Example usage: `php generate_readme.php | xclip -selection clipboard`
+ * Quick and dirty script that appends a ToC to the README based on the
+ * directory structure.
  *
  * As a side effect also generates the exercise-specific READMEs which contain
  * gifs of the exercise (if one exists).
@@ -55,6 +53,28 @@ function generateToc(array $structure): string {
     return $toc;
 }
 
+function appendToc(string $toc): void {
+    $readme = file(__DIR__ .'/README.md');
+    $toc_line = array_search("## Table of contents\n", $readme);
+    if (!$toc_line) {
+        return;
+    }
+
+    $start_line = $toc_line + 1;
+    $readme = array_slice($readme, 0, $start_line);
+
+    $toc_lines = explode("\n", $toc);
+    $toc_lines = array_map(function (string $line): string {
+        return $line . "\n";
+    }, $toc_lines);
+
+    $readme = array_merge($readme, $toc_lines);
+    $readme = implode("", $readme);
+    $readme = trim($readme) . "\n";
+
+    file_put_contents(__DIR__ . '/README.md', $readme);
+}
+
 function generateReadmes(array $structure): void {
     $screenshots = glob('screenshots/*');
     $screenshots = array_map('basename', $screenshots);
@@ -82,7 +102,7 @@ function main(): void {
     // 1. Output the ToC.
     $chapter_structure = getChapterStructure();
     $toc = generateToc($chapter_structure);
-    echo $toc;
+    appendToc($toc);
 
     // 2. Generate READMEs if needed.
     generateReadmes($chapter_structure);
