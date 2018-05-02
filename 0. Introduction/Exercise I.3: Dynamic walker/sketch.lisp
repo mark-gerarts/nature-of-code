@@ -25,7 +25,7 @@
     (vec2 (+ rx (x pos)) (+ ry (y pos)))))
 
 (defun move-to-point (pos point)
-  "Step in the direction of the mouse."
+  "Step in the direction of the given point."
   (let* ((diff (subt point pos))
          (length (abs (sqrt (+ (expt (x diff) 2) (expt (y diff) 2))))))
     (add (div diff length) pos)))
@@ -45,6 +45,10 @@
   (:viewport-height *height*)
   (:viewport-title "Dynamic random walker"))
 
+(defmethod post-initialize ((this sketch))
+  (bind-cursor (lambda (x y)
+                 (setf *mouse-position* (vec2 x y)))))
+
 (defmethod draw ((this sketch))
   (draw-text (format nil "~A" *mouse-position*) (vec2 0 0 ))
   (draw (walker this)))
@@ -53,6 +57,3 @@
   (step-walker (walker this)))
 
 (start 'sketch)
-
-(bind-cursor (lambda (x y)
-               (setf *mouse-position* (vec2 x y))))
