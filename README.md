@@ -16,3 +16,4 @@ of trivial-gamekit and `(ql:quickload :trivial-gamekit)` before compiling.
   - [Exercise I.3: Dynamic walker](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.3%3A%20Dynamic%20walker)
   - [Exercise I.4: Gaussian paint](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.4%3A%20Gaussian%20paint)
   - [Exercise I.5: Gaussian random walk](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.5%3A%20Gaussian%20random%20walk)
+  - [Exercise I.6: Custom distribution walk](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.6%3A%20Custom%20distribution%20walk)
