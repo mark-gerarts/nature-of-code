@@ -24,3 +24,4 @@ of trivial-gamekit and `(ql:quickload :trivial-gamekit)` before compiling.
   - [Exercise I.9: Moving 2D Perlin noise](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.9%3A%20Moving%202D%20Perlin%20noise)
 - [01. Vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors)
   - [Example 1.1: Bouncing ball with no vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.1%3A%20Bouncing%20ball%20with%20no%20vectors)
+  - [Example 1.2: Bouncing ball with vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.2%3A%20Bouncing%20ball%20with%20vectors)
