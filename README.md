@@ -7,6 +7,8 @@ Code samples are organised per chapter. To run them, follow the
 [install instructions](https://borodust.github.io/projects/trivial-gamekit/#installation-and-loading)
 of trivial-gamekit and `(ql:quickload :trivial-gamekit)` before compiling.
 
+NOTE: `trivial-gamekit` only supports 2D animations, so examples and exercises involving 3D are omitted. 
+
 ## Table of contents
 - [0. Introduction](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction)
   - [Example I.1: Traditional random walk](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Example%20I.1%3A%20Traditional%20random%20walk)
