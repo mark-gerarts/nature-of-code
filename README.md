@@ -7,7 +7,8 @@ Code samples are organised per chapter. To run them, follow the
 [install instructions](https://borodust.github.io/projects/trivial-gamekit/#installation-and-loading)
 of trivial-gamekit and `(ql:quickload :trivial-gamekit)` before compiling.
 
-NOTE: `trivial-gamekit` only supports 2D animations, so examples and exercises involving 3D are omitted. 
+Note: `trivial-gamekit` only supports 2D animations, so examples and exercises
+involving 3D are omitted.
 
 ## Table of contents
 - [0. Introduction](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction)
@@ -28,3 +29,4 @@ NOTE: `trivial-gamekit` only supports 2D animations, so examples and exercises i
   - [Example 1.1: Bouncing ball with no vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.1%3A%20Bouncing%20ball%20with%20no%20vectors)
   - [Example 1.2: Bouncing ball with vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.2%3A%20Bouncing%20ball%20with%20vectors)
   - [Example 1.3: Vector subtraction](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.3%3A%20Vector%20subtraction)
+  - [Example 1.4: Multiplying a vector](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.4%3A%20Multiplying%20a%20vector)

@@ -1,0 +1,3 @@
+# Example 1.4: Multiplying a vector
+
+![Example 1.4: Multiplying a vector](https://raw.githubusercontent.com/mark-gerarts/nature-of-code/master/screenshots/Example%201.4%3A%20Multiplying%20a%20vector.gif)
