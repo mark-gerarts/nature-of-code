@@ -31,3 +31,4 @@ involving 3D are omitted.
   - [Example 1.3: Vector subtraction](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.3%3A%20Vector%20subtraction)
   - [Example 1.4: Multiplying a vector](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.4%3A%20Multiplying%20a%20vector)
   - [Example 1.5: Vector magnitude](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.5%3A%20Vector%20magnitude)
+  - [Example 1.6: Normalizing a vector](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.6%3A%20Normalizing%20a%20vector)
