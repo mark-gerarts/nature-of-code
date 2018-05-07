@@ -1,3 +1,3 @@
 # Vector limit
 
-- No screenshot available -
+*No screenshot available*
