@@ -4,5 +4,6 @@
 
 ;; Since we don't use the PVector class, we'll write a function instead
 (defun limit-vec (vec max)
-  (when (> (vector-length vec) max)
-    (mult (normalize vec) max)))
+  (if (> (vector-length vec) max)
+      (mult (normalize vec) max)
+      vec))
