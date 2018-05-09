@@ -1,22 +1,18 @@
-(defpackage :sketch (:use :cl :trivial-gamekit)
-            (:import-from :cl-bodge :vector-length :normalize))
-(in-package :sketch)
+;; See readme notes for running this.
+(defpackage :vectors-car-acceleration (:use :cl :trivial-gamekit)
+            (:import-from :cl-bodge :vector-length :normalize)
+            (:export :start-sketch))
+(in-package :vectors-car-acceleration)
 
-(defvar *width* 640)
-(defvar *height* 360)
+(defvar *width* 800)
+(defvar *height* 240)
 
-(defvar *black* (vec4 0 0 0 1))
-(defvar *gray* (vec4 0.5 0.5 0.5 1))
+;; Register resources
+(register-resource-package
+ :keyword
+ (asdf:system-relative-pathname :vectors-car-acceleration "assets/"))
 
-;; ;; Define resources.
-;; (register-resource-package
-;;  :sketch
-;;  ;; Gamekit expects an absolute path. Should this cause an error, make sure
-;;  ;; the cwd is correct.
-;;  *default-pathname-defaults*)
-
-(define-image 'sketch::cars
-  (merge-pathnames "car_sprite.png" *default-pathname-defaults*))
+(define-image :sprite "sprite.png")
 
 (defun limit-vec (vec max)
   (if (> (vector-length vec) max)
@@ -28,17 +24,20 @@
 
 (defclass mover ()
   ((location
-    :initform (vec2 (random-in-range 0 *width*) (random-in-range 0 *height*))
+    :initform (vec2 0 0)
     :accessor location)
    (velocity
     :initform (vec2 0 0)
     :accessor velocity)
    (acceleration
-    :initform (vec2 -0.001 0.01)
+    :initform (vec2 0 0)
     :accessor acceleration)
    (top-speed
     :initform 10
-    :accessor top-speed)))
+    :accessor top-speed)
+   (acceleration-delta
+    :initform 0.01
+    :reader da)))
 
 (defmethod check-edges ((mover mover))
   (let* ((location (location mover))
@@ -57,7 +56,13 @@
     (check-edges mover)))
 
 (defmethod display ((mover mover))
-  (draw-image (location mover) 'sketch::cars))
+  (draw-image (location mover) :sprite))
+
+(defmethod accelerate ((mover mover))
+  (incf (x (acceleration mover)) (da mover)))
+
+(defmethod decelerate ((mover mover))
+  (decf (x (acceleration mover)) (da mover)))
 
 (defgame sketch ()
   ((mover
@@ -67,10 +72,15 @@
   (:viewport-height *height*)
   (:viewport-title "Car acceleration simulation"))
 
+(defmethod post-initialize ((this sketch))
+  (bind-button :up :pressed (lambda () (accelerate (mover this))))
+  (bind-button :down :pressed (lambda () (decelerate (mover this)))))
+
 (defmethod draw ((this sketch))
   (display (mover this)))
 
 (defmethod act ((this sketch))
   (update (mover this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))
