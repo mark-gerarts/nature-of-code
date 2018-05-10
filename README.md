@@ -36,6 +36,7 @@ involving 3D are omitted.
   - [Example 1.8: Motion 101 (velocity and constant acceleration)](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.8%3A%20Motion%20101%20%28velocity%20and%20constant%20acceleration%29)
   - [Example 1.9: Motion 101 (velocity and random acceleration)](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.9%3A%20Motion%20101%20%28velocity%20and%20random%20acceleration%29)
   - [Example 1.10: Acceleration towards the mouse](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.10%3A%20Acceleration%20towards%20the%20mouse)
+  - [Example 1.11: Array of movers accelerating towards the mouse](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.11%3A%20Array%20of%20movers%20accelerating%20towards%20the%20mouse)
   - [Exercise 1.4: Vector limit](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.4%3A%20Vector%20limit)
   - [Exercise 1.5: Car acceleration simulation](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.5%3A%20Car%20acceleration%20simulation)
   - [Exercise 1.6: Perlin acceleration](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.6%3A%20Perlin%20acceleration)
