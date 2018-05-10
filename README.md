@@ -26,6 +26,7 @@ involving 3D are omitted.
   - [Exercise I.8: 2D Perlin noise colour](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.8%3A%202D%20Perlin%20noise%20colour)
   - [Exercise I.9: Moving 2D Perlin noise](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction/Exercise%20I.9%3A%20Moving%202D%20Perlin%20noise)
 - [01. Vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors)
+  - [Example 1.10: Acceleration towards the mouse](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.10%3A%20Acceleration%20towards%20the%20mouse)
   - [Example 1.1: Bouncing ball with no vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.1%3A%20Bouncing%20ball%20with%20no%20vectors)
   - [Example 1.2: Bouncing ball with vectors](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.2%3A%20Bouncing%20ball%20with%20vectors)
   - [Example 1.3: Vector subtraction](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.3%3A%20Vector%20subtraction)
