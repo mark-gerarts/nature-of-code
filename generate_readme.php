@@ -11,9 +11,26 @@
 const GITHUB_TREE_BASE = 'https://github.com/mark-gerarts/nature-of-code/tree/master/';
 const SCREENSHOT_HOST = 'https://raw.githubusercontent.com/mark-gerarts/nature-of-code/master/screenshots/';
 
+// Returns the number of the exercise or example. E.g. "Example 1.10" => 10.
+function getExerciseNumber(string $full_name): int {
+    preg_match('/\.(\d*):|^\d+/', $full_name, $matches);
+    return array_pop($matches) ?: -1;
+}
+
+function getSortWeight(string $full_name): int {
+    $multiplier = strpos($full_name, 'Example') !== false ? 1 : 100;
+    $number = getExerciseNumber($full_name);
+    return $number * $multiplier;
+}
+
 function getSubDirectories(string $directory): array {
     $directories =  glob($directory . '/*', GLOB_ONLYDIR);
-    return array_map('basename', $directories);
+    $directories = array_map('basename', $directories);
+    usort($directories, function (string $a, string $b) {
+        return getSortWeight($a) <=> getSortWeight($b);
+    });
+
+    return $directories;
 }
 
 function getChapterStructure(): array {
