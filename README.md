@@ -39,3 +39,4 @@ involving 3D are omitted.
   - [Exercise 1.4: Vector limit](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.4%3A%20Vector%20limit)
   - [Exercise 1.5: Car acceleration simulation](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.5%3A%20Car%20acceleration%20simulation)
   - [Exercise 1.6: Perlin acceleration](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.6%3A%20Perlin%20acceleration)
+  - [Exercise 1.8: Variable acceleration towards the mouse](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.8%3A%20Variable%20acceleration%20towards%20the%20mouse)
