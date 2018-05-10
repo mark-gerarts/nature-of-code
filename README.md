@@ -34,5 +34,6 @@ involving 3D are omitted.
   - [Example 1.6: Normalizing a vector](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.6%3A%20Normalizing%20a%20vector)
   - [Example 1.7: Motion 101 (velocity)](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.7%3A%20Motion%20101%20%28velocity%29)
   - [Example 1.8: Motion 101 (velocity and constant acceleration)](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.8%3A%20Motion%20101%20%28velocity%20and%20constant%20acceleration%29)
+  - [Example 1.9: Motion 101 (velocity and random acceleration)](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Example%201.9%3A%20Motion%20101%20%28velocity%20and%20random%20acceleration%29)
   - [Exercise 1.4: Vector limit](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.4%3A%20Vector%20limit)
   - [Exercise 1.5: Car acceleration simulation](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.5%3A%20Car%20acceleration%20simulation)
