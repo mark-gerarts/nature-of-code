@@ -66,6 +66,7 @@ function toAsdfDefinition(array $chapter_structure) {
   ;; We get such a messy component definition because the directory structure
   ;; is set up to be easily browsable, with a README for each example.
   :components (%s))
+
 ASDF;
 
     $module_template = <<<MODULE
