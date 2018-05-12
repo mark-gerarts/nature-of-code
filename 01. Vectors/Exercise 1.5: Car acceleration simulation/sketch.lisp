@@ -1,8 +1,8 @@
-;; See readme notes for running this.
-(defpackage :vectors-car-acceleration (:use :cl :trivial-gamekit)
-            (:import-from :cl-bodge :vector-length :normalize)
-            (:export :start-sketch))
-(in-package :vectors-car-acceleration)
+(defpackage :nature-of-code.vectors.exercise-5
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit)
+  (:import-from :cl-bodge :vector-length :normalize))
+(in-package :nature-of-code.vectors.exercise-5)
 
 (defvar *width* 800)
 (defvar *height* 240)
@@ -10,7 +10,7 @@
 ;; Register resources
 (register-resource-package
  :keyword
- (asdf:system-relative-pathname :vectors-car-acceleration "assets/"))
+ (asdf:system-relative-pathname :nature-of-code "assets/"))
 
 (define-image :sprite "sprite.png")
 

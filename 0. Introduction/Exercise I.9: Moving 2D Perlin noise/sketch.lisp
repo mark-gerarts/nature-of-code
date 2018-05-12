@@ -1,5 +1,7 @@
-(defpackage :sketch (:use :cl :trivial-gamekit :black-tie))
-(in-package :sketch)
+(defpackage :nature-of-code.introduction.exercise-9
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit :black-tie))
+(in-package :nature-of-code.introduction.exercise-9)
 
 (defvar *width* 630)
 (defvar *height* 240)
@@ -25,4 +27,5 @@
 (defmethod act ((this sketch))
   (incf (dz this) 0.02))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

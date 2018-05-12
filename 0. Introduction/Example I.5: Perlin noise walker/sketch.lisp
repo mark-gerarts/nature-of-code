@@ -1,7 +1,7 @@
-;; Note: might want to define an asdf system because dependencies are
-;; getting numerous.
-(defpackage :sketch (:use :cl :trivial-gamekit :black-tie))
-(in-package :sketch)
+(defpackage :nature-of-code.introduction.example-5
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit :black-tie))
+(in-package :nature-of-code.introduction.example-5)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -56,4 +56,5 @@
 (defmethod act ((this sketch))
   (step-walker (walker this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

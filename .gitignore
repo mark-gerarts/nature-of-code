@@ -1,3 +1,4 @@
 # Emacs temp files
 .#*
+.idea/
 system-index.txt*

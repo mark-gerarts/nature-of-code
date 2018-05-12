@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit)
-            (:shadow :step))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.example-2
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit)
+  (:shadow :step))
+(in-package :nature-of-code.vectors.example-2)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -46,4 +48,5 @@
 (defmethod act ((this sketch))
   (step (ball this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

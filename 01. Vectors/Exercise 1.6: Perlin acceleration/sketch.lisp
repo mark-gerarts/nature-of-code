@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit :black-tie)
-            (:import-from :cl-bodge :vector-length :normalize))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.exercise-6
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit :black-tie)
+  (:import-from :cl-bodge :vector-length :normalize))
+(in-package :nature-of-code.vectors.exercise-6)
 
 (defvar *width* 640)
 (defvar *height* 360)
@@ -72,4 +74,5 @@
   (update (mover this) (dt this))
   (incf (dt this) 0.005))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

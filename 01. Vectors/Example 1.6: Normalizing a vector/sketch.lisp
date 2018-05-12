@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit)
-            (:import-from :cl-bodge.math :vector-length :normalize))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.example-6
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit)
+  (:import-from :cl-bodge.math :vector-length :normalize))
+(in-package :nature-of-code.vectors.example-6)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -25,10 +27,9 @@
 (defmethod draw ((this sketch))
   (let* ((center (center this))
          (sub (subt (mouse-position this) center))
-         (norm (* 50 (normalize sub))))
-    (draw-text (format nil "~A" center) (vec2 0 0))))
-    ;; (translate-canvas (x center) (y center))
-    ;; (print norm)
-    ;; (draw-line (vec2 0 0) norm *black* :thickness 2))
+         (norm (mult 50 (normalize sub))))
+     (translate-canvas (x center) (y center))
+     (draw-line (vec2 0 0) norm *black* :thickness 2)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

@@ -1,5 +1,7 @@
-(defpackage :sketch (:use :cl :trivial-gamekit))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.example-4
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit))
+(in-package :nature-of-code.vectors.example-4)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -28,4 +30,5 @@
     (setf sub (mult sub 0.5))
     (draw-line (vec2 0 0) sub *black* :thickness 2)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

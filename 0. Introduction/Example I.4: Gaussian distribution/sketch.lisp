@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit :alexandria)
-            (:shadowing-import-from :alexandria :lerp))
-(in-package :sketch)
+(defpackage :nature-of-code.introduction.example-4
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit :alexandria)
+  (:shadowing-import-from :alexandria :lerp))
+(in-package :nature-of-code.introduction.example-4)
 
 (defvar *width* 640)
 (defvar *height* 240)
@@ -39,4 +41,5 @@
 (defmethod act ((this sketch))
   (vector-push-extend (make-instance 'dot) (dots this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

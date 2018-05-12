@@ -1,14 +1,27 @@
 # Nature of code
+[Nature of code] examples and exercises implemented in
+Lisp using [trivial-gamekit].
 
-[Nature of code](http://natureofcode.com) examples and exercises implemented in
-Lisp using [trivial-gamekit](https://github.com/borodust/trivial-gamekit).
+## Installation and usage
+1. You'll first have to add cl-bodge to quicklisp, as per the [install instructions]
+of trivial gamekit:
+`(ql-dist:install-dist "http://bodge.borodust.org/dist/org.borodust.bodge.txt")`
 
-Code samples are organised per chapter. To run them, follow the
-[install instructions](https://borodust.github.io/projects/trivial-gamekit/#installation-and-loading)
-of trivial-gamekit and `(ql:quickload :trivial-gamekit)` before compiling.
+1. Make sure quicklisp is able to detect this package (e.g. put it in
+`~/quicklisp/local-projects`).
 
-Note: `trivial-gamekit` only supports 2D animations, so examples and exercises
-involving 3D are omitted.
+1. `(ql:quickload :nature-of-code)`
+
+1. Run a sketch using for example `(nature-of-code.introduction.example-1:start-sketch)`.
+You can find these snippets in the README of each example.
+
+Some notes:
+- `trivial-gamekit` only supports 2D animations, so examples and exercises involving 3D are omitted.
+- The directory structure is set up to be easily browsable. This makes the ASDF definition kinda ugly.
+
+[Nature of code]: http://natureofcode.com
+[trivial-gamekit]: https://github.com/borodust/trivial-gamekit
+[install instructions]: https://borodust.github.io/projects/trivial-gamekit/#installation-and-loading
 
 ## Table of contents
 - [0. Introduction](https://github.com/mark-gerarts/nature-of-code/tree/master/0.%20Introduction)

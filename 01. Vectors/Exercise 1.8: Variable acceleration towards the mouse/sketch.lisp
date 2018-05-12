@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit)
-            (:import-from :cl-bodge :vector-length :normalize))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.exercise-8
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit)
+  (:import-from :cl-bodge :vector-length :normalize))
+(in-package :nature-of-code.vectors.exercise-8)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -57,4 +59,5 @@
 (defmethod act ((this sketch))
   (update (mover this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

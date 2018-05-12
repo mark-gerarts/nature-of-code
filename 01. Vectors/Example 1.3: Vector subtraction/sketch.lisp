@@ -1,5 +1,7 @@
-(defpackage :sketch (:use :cl :trivial-gamekit))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.example-3
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit))
+(in-package :nature-of-code.vectors.example-3)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -27,4 +29,5 @@
     (translate-canvas (x center) (y center))
     (draw-line (vec2 0 0) sub *black* :thickness 2)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

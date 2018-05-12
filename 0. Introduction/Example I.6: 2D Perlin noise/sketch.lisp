@@ -1,5 +1,7 @@
-(defpackage :sketch (:use :cl :trivial-gamekit :black-tie))
-(in-package :sketch)
+(defpackage :nature-of-code.introduction.example-6
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit :black-tie))
+(in-package :nature-of-code.introduction.example-6)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -19,4 +21,5 @@
               do (draw-rect (vec2 x y) 1 1
                             :fill-paint (get-color-for-pos x y)))))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

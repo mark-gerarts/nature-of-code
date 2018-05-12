@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit :alexandria)
-            (:shadowing-import-from :alexandria :lerp))
-(in-package :sketch)
+(defpackage :nature-of-code.introduction.exercise-6
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit :alexandria)
+  (:shadowing-import-from :alexandria :lerp))
+(in-package :nature-of-code.introduction.exercise-6)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -56,4 +58,5 @@
 (defmethod act ((this sketch))
   (step-walker (walker this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

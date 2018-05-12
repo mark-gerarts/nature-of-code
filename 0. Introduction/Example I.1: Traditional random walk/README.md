@@ -1,3 +1,5 @@
-# I.1 Traditional random walker
+# Example I.1: Traditional random walk
 
-![I.1 Traditional random walker](https://raw.githubusercontent.com/mark-gerarts/nature-of-code/master/screenshots/Example%20I.1:%20Traditional%20random%20walk.gif)
+Run this example: `(nature-of-code.introduction.example-1:start-sketch)`
+
+![Example I.1: Traditional random walk](https://raw.githubusercontent.com/mark-gerarts/nature-of-code/master/screenshots/Example%20I.1%3A%20Traditional%20random%20walk.gif)

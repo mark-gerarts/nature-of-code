@@ -1,5 +1,7 @@
-(defpackage :sketch (:use :cl :trivial-gamekit))
-(in-package :sketch)
+(defpackage :nature-of-code.introduction.exercise-3
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit))
+(in-package :nature-of-code.introduction.exercise-3)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -56,4 +58,5 @@
 (defmethod act ((this sketch))
   (step-walker (walker this)))
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))

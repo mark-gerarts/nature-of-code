@@ -1,6 +1,8 @@
-(defpackage :sketch (:use :cl :trivial-gamekit)
-            (:import-from :cl-bodge.math :vector-length))
-(in-package :sketch)
+(defpackage :nature-of-code.vectors.example-5
+  (:export :start-sketch)
+  (:use :cl :trivial-gamekit)
+  (:import-from :cl-bodge.math :vector-length))
+(in-package :nature-of-code.vectors.example-5)
 
 (defvar *width* 800)
 (defvar *height* 600)
@@ -37,4 +39,5 @@
       (draw-line (vec2 0 0) sub *black* :thickness 2)) ; The vector
     (draw-magnitude (vector-length sub))))             ; The magnitude
 
-(start 'sketch)
+(defun start-sketch ()
+  (start 'sketch))
