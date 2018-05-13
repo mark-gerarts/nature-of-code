@@ -81,11 +81,10 @@
     :accessor dt))
   (:viewport-width *width*)
   (:viewport-height *height*)
-  (:viewport-title "Motion 101 (velocity and constant acceleration)"))
+  (:viewport-title "Helium-filled balloon"))
 
 (defmethod draw ((this sketch))
-  (display (mover this))
-  (draw-text (format nil "~A" (velocity (mover this))) (vec2 0 0)))
+  (display (mover this)))
 
 (defmethod act ((this sketch))
   (let ((mover (mover this))

@@ -67,4 +67,9 @@
                  (:file "nature-of-code.vectors.exercise-6"
                   :pathname "Exercise 1.6: Perlin acceleration/sketch")
                  (:file "nature-of-code.vectors.exercise-8"
-                  :pathname "Exercise 1.8: Variable acceleration towards the mouse/sketch")))))
+                  :pathname "Exercise 1.8: Variable acceleration towards the mouse/sketch")))
+               (:module "forces"
+                :pathname "02. Forces"
+                :components
+                ((:file "nature-of-code.forces.exercise-1"
+                  :pathname "Exercise 2.1: Helium-filled balloon/sketch")))))

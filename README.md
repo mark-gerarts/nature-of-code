@@ -54,3 +54,5 @@ Some notes:
   - [Exercise 1.5: Car acceleration simulation](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.5%3A%20Car%20acceleration%20simulation)
   - [Exercise 1.6: Perlin acceleration](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.6%3A%20Perlin%20acceleration)
   - [Exercise 1.8: Variable acceleration towards the mouse](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.8%3A%20Variable%20acceleration%20towards%20the%20mouse)
+- [02. Forces](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces)
+  - [Exercise 2.1: Helium-filled balloon](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.1%3A%20Helium-filled%20balloon)
