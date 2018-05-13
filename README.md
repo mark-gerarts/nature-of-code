@@ -56,4 +56,5 @@ Some notes:
   - [Exercise 1.8: Variable acceleration towards the mouse](https://github.com/mark-gerarts/nature-of-code/tree/master/01.%20Vectors/Exercise%201.8%3A%20Variable%20acceleration%20towards%20the%20mouse)
 - [02. Forces](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces)
   - [Example 2.1: Forces](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.1%3A%20Forces)
+  - [Example 2.2: Forces acting on many objects](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.2%3A%20Forces%20acting%20on%20many%20objects)
   - [Exercise 2.1: Helium-filled balloon](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.1%3A%20Helium-filled%20balloon)
