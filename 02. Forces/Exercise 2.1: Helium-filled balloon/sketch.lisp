@@ -35,8 +35,12 @@
     :initform 25
     :accessor radius)))
 
-(defmethod reverse-direction ((mover mover))
-  (setf (velocity mover) (mult (velocity mover) -1)))
+(defmethod reverse-direction ((mover mover) dir)
+  (let ((vx (x (velocity mover)))
+        (vy (y (velocity mover))))
+    (if (eq dir 'x)
+        (setf (x (velocity mover)) (- vx))
+        (setf (y (velocity mover)) (- vy)))))
 
 (defmethod check-edges ((mover mover))
   (let* ((location (location mover))
@@ -46,13 +50,19 @@
          (top (+ y r))
          (right (+ x r))
          (bottom (- y r))
-         (left (- x r))
-         (pos (cond ((< left 0) (vec2 0 y))
-                    ((> right *width*) (vec2 (- *width* r) y))
-                    ((< bottom 0) (vec2 x r))
-                    ((> top *height*) (vec2 x (- *height* r))))))
-    (when pos (progn (reverse-direction mover)
-                     (setf (location mover) pos)))))
+         (left (- x r)))
+    (cond ((< left 0) (progn
+                        (setf (x (location mover)) r)
+                        (reverse-direction mover 'x)))
+          ((> right *width*) (progn
+                               (setf (x (location mover)) (- *width* r))
+                               (reverse-direction mover 'x)))
+          ((< bottom 0) (progn
+                          (setf (y (location mover)) r)
+                          (reverse-direction mover 'y)))
+          ((> top *height*) (progn
+                              (setf (y (location mover)) (- *height* r))
+                              (reverse-direction mover 'y))))))
 
 (defmethod apply-force ((mover mover) force)
   (setf (acceleration mover) (add (acceleration mover) force)))
