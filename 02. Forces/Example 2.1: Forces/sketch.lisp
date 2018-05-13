@@ -10,11 +10,6 @@
 (defvar *black* (vec4 0 0 0 1))
 (defvar *gray* (vec4 0.5 0.5 0.5 1))
 
-(defun limit-vec (vec max)
-  (if (> (vector-length vec) max)
-      (mult (normalize vec) max)
-      vec))
-
 (defclass mover ()
   ((location
     :initform (vec2 50 (- *height* 2))
@@ -67,8 +62,7 @@
 
 (defmethod update ((mover mover))
   (let* ((a (acceleration mover))
-         (v (add (velocity mover) a))
-         (v (limit-vec v 3)))
+         (v (add (velocity mover) a)))
     (setf (velocity mover) v)
     (setf (location mover) (add v (location mover)))
     (setf (acceleration mover) (vec2 0 0)) ; Reset the acceleration.
