@@ -76,4 +76,6 @@
                  (:file "nature-of-code.forces.example-2"
                   :pathname "Example 2.2: Forces acting on many objects/sketch")
                  (:file "nature-of-code.forces.exercise-1"
-                  :pathname "Exercise 2.1: Helium-filled balloon/sketch")))))
+                  :pathname "Exercise 2.1: Helium-filled balloon/sketch")
+                 (:file "nature-of-code.forces.exercise-3"
+                  :pathname "Exercise 2.3: Invisible force/sketch")))))
