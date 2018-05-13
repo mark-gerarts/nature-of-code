@@ -71,5 +71,7 @@
                (:module "forces"
                 :pathname "02. Forces"
                 :components
-                ((:file "nature-of-code.forces.exercise-1"
+                ((:file "nature-of-code.forces.example-1"
+                  :pathname "Example 2.1: Forces/sketch")
+                 (:file "nature-of-code.forces.exercise-1"
                   :pathname "Exercise 2.1: Helium-filled balloon/sketch")))))
