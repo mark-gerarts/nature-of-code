@@ -58,5 +58,6 @@ Some notes:
   - [Example 2.1: Forces](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.1%3A%20Forces)
   - [Example 2.2: Forces acting on many objects](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.2%3A%20Forces%20acting%20on%20many%20objects)
   - [Example 2.3: Gravity scaled by mass](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.3%3A%20Gravity%20scaled%20by%20mass)
+  - [Example 2.4: Including friction](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.4%3A%20Including%20friction)
   - [Exercise 2.1: Helium-filled balloon](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.1%3A%20Helium-filled%20balloon)
   - [Exercise 2.3: Invisible force](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.3%3A%20Invisible%20force)
