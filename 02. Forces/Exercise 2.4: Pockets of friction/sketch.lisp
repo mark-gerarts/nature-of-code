@@ -17,14 +17,14 @@
    (radius
     :initarg :radius
     :accessor radius)
-   (friction
-    :initarg :friction
-    :accessor friction)))
+   (friction-coefficient
+    :initarg :friction-coefficient
+    :accessor friction-coefficient)))
 
 (defmethod display ((pocket friction-pocket))
   (let* ((slow-down-color (vec4 0 1 0 0.2))
          (speed-up-color (vec4 1 0 0 0.2))
-         (color (if (plusp (x (friction pocket)))
+         (color (if (plusp (friction-coefficient pocket))
                            speed-up-color
                            slow-down-color)))
     (draw-circle (location pocket) (radius pocket) :fill-paint color)))
@@ -99,13 +99,12 @@
   (let ((f (div force (mass mover))))
     (setf (acceleration mover) (add (acceleration mover) f))))
 
-(defmethod get-friction ((mover mover))
+(defmethod apply-friction ((mover mover) &optional (c 0.05))
   (let* ((friction (velocity mover))
-         (c 0.05)
          (friction (normalize friction))
          (friction (mult friction -1))
          (friction (mult friction c)))
-    friction))
+    (apply-force mover friction)))
 
 (defmethod update ((mover mover))
   (let* ((a (acceleration mover))
@@ -131,16 +130,16 @@
   (:viewport-title "Including friction"))
 
 (defmethod post-initialize ((this sketch))
-  (let ((movers (loop repeat 5 collect (make-instance 'mover)))
+  (let ((movers (loop repeat 10 collect (make-instance 'mover)))
         (pockets (list
                    (make-instance 'friction-pocket
-                                  :location (vec2 100 100)
-                                  :radius 75
-                                  :friction (vec2 -0.5 -0.5))
+                                  :location (vec2 200 200)
+                                  :radius 150
+                                  :friction-coefficient 0.7)
                    (make-instance 'friction-pocket
-                                  :location (vec2 700 300)
-                                  :radius 75
-                                  :friction (vec2 0.5 0.5)))))
+                                  :location (vec2 600 200)
+                                  :radius 150
+                                  :friction-coefficient -0.7))))
   (setf (movers this)
         (make-array (length movers)
                     :element-type 'mover
@@ -157,13 +156,12 @@
 (defmethod act ((this sketch))
   (loop for mover across (movers this)
         do (let ((forces (list
-                          (get-friction mover)              ; Friction
                           (mult (vec2 0 -0.1) (mass mover)) ; Gravity
                           (vec2 0.02 0))))                  ; Wind
              ;; Check if we're in a pocket and if so add its friction.
-             (loop for pocket in (pockets this)
+             (loop for pocket across (pockets this)
                    when (is-in-pocket pocket (location mover))
-                     do (push (friction pocket) forces))
+                     do (apply-friction mover (friction-coefficient pocket)))
              (dolist (force forces) (apply-force mover force))
              (update mover))))
 
