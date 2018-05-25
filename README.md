@@ -2,6 +2,8 @@
 [Nature of code] examples and exercises implemented in
 Lisp using [trivial-gamekit].
 
+![Example gif](https://raw.githubusercontent.com/mark-gerarts/nature-of-code/master/screenshots/Example%202.5%3A%20Fluid%20resistance.gif)
+
 ## Installation and usage
 1. You'll first have to add cl-bodge to quicklisp, as per the [install instructions]
 of trivial gamekit:
