@@ -86,4 +86,6 @@
                  (:file "nature-of-code.forces.exercise-3"
                   :pathname "Exercise 2.3: Invisible force/sketch")
                  (:file "nature-of-code.forces.exercise-4"
-                  :pathname "Exercise 2.4: Pockets of friction/sketch")))))
+                  :pathname "Exercise 2.4: Pockets of friction/sketch")
+                 (:file "nature-of-code.forces.exercise-5"
+                  :pathname "Exercise 2.5: Fluid resistance with different heights/sketch")))))
