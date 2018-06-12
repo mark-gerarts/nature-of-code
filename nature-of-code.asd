@@ -90,4 +90,9 @@
                  (:file "nature-of-code.forces.exercise-5"
                   :pathname "Exercise 2.5: Fluid resistance with different heights/sketch")
                  (:file "nature-of-code.forces.exercise-6"
-                  :pathname "Exercise 2.6: Falling boxes/sketch")))))
+                  :pathname "Exercise 2.6: Falling boxes/sketch")))
+               (:module "fractals"
+                :pathname "08. Fractals"
+                :components
+                ((:file "nature-of-code.fractals.example-6"
+                  :pathname "Example 8.6: Recursive tree/sketch")))))
