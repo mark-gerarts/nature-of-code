@@ -70,3 +70,4 @@ Some notes:
 - [08. Fractals](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals)
   - [Example 8.6: Recursive tree](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.6%3A%20Recursive%20tree)
   - [Example 8.7: Dynamic recursive tree](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.7%3A%20Dynamic%20recursive%20tree)
+  - [Exercise 8.7: Recursive thinning tree](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Exercise%208.7%3A%20Recursive%20thinning%20tree)

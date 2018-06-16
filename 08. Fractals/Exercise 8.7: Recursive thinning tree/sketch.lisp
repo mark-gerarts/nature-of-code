@@ -1,8 +1,8 @@
-(defpackage :nature-of-code.fractals.example-8.6
+(defpackage :nature-of-code.fractals.exercise-8.7
   (:export :start-sketch)
   (:use :cl :trivial-gamekit)
   (:import-from :cl-bodge))
-(in-package :nature-of-code.fractals.example-8.6)
+(in-package :nature-of-code.fractals.exercise-8.7)
 
 (defvar *width* 600)
 (defvar *height* 400)
@@ -17,22 +17,22 @@
   (:viewport-height *height*)
   (:viewport-title "Recursive tree"))
 
-(defun draw-black-line (origin end)
-  (draw-line origin end *black* :thickness 3))
-
-(defun branch (len &optional (theta (/ pi 6)))
+(defun branch (len &optional (theta (/ pi 6)) (thickness 8))
+  (draw-line (vec2 0 0) (vec2 0 len) *black* :thickness thickness)
   (draw-black-line (vec2 0 0) (vec2 0 len))
   (translate-canvas 0 len)
 
   (setf len (* 0.66 len))
-  (when (> len 2)
+  (setf thickness (* 0.8 thickness))
+
+  (when (and (> len 2) (> thickness 0))
     (with-pushed-canvas ()
       (rotate-canvas (- theta))
-      (branch len))
+      (branch len theta thickness))
 
     (with-pushed-canvas ()
       (rotate-canvas theta)
-      (branch len))))
+      (branch len theta thickness))))
 
 (defmethod draw ((this sketch))
   (translate-canvas *center-x* 0)
