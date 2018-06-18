@@ -19,7 +19,6 @@
 
 (defun branch (len &optional (theta (/ pi 6)) (thickness 8))
   (draw-line (vec2 0 0) (vec2 0 len) *black* :thickness thickness)
-  (draw-black-line (vec2 0 0) (vec2 0 len))
   (translate-canvas 0 len)
 
   (setf len (* 0.66 len))
