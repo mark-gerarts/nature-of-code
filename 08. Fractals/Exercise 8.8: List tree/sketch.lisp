@@ -11,6 +11,9 @@
 
 (defvar *black* (vec4 0 0 0 1))
 
+(defvar *theta* (/ pi 6))
+(defvar *length-reduction* 0.66)
+
 (defun rotate (vector theta)
   "Rotates a (unit) vector."
   (with-accessors ((x x) (y y)) vector
@@ -30,20 +33,24 @@
    (direction
     :initarg :direction
     :accessor direction
-    :documentation "Unit vector indicating the direction.")))
+    :documentation "Unit vector indicating the direction.")
+   (splitp
+    :initform 'nil
+    :accessor splitp
+    :documentation "Indicates if this branch has been split.")))
 
 (defmethod initialize-instance :after ((branch branch) &key)
   ;; We'll calculate the end after initializing the branch.
   (with-slots (origin end branch-length direction) branch
     (setf end (add (mult direction branch-length) origin))))
 
-(defmethod split-branch ((branch branch) &key (direction :left) (theta (/ pi 6)))
-  (unless (equalp direction :left)
-    (setf theta (- theta)))
-  (make-instance 'branch
-                 :origin (end branch)
-                 :length (branch-length branch)
-                 :direction (rotate (direction branch) theta)))
+(defmethod split-branch ((branch branch) &key (direction :left))
+  (let ((theta (if (equalp direction :left) *theta* (- *theta*))))
+    (setf (splitp branch) t)
+    (make-instance 'branch
+                   :origin (end branch)
+                   :length (* *length-reduction* (branch-length branch))
+                   :direction (rotate (direction branch) theta))))
 
 (defmethod display ((branch branch))
   (with-accessors ((origin origin) (end end)) branch
@@ -58,14 +65,14 @@
   (:viewport-title "List tree"))
 
 (defun split (branches)
-  (let ((new-branches (make-array 0 :adjustable t :fill-pointer 0)))
-    (loop for branch across branches
+  (loop for branch across branches
+        unless (splitp branch)
           do (progn
                (vector-push-extend
-                (split-branch branch :direction :left) new-branches)
+                (split-branch branch :direction :left) branches)
                (vector-push-extend
-                (split-branch branch :direction :right) new-branches)))
-    new-branches))
+                (split-branch branch :direction :right) branches)))
+  branches)
 
 (defun branch (len &optional (theta (/ pi 6)) (thickness 8))
   (draw-line (vec2 0 0) (vec2 0 len) *black* :thickness thickness)
@@ -88,7 +95,7 @@
     (vector-push-extend
      (make-instance 'branch :origin (vec2 300 0) :length 100 :direction (vec2 0 1))
      branches)
-    (setf branches (split branches))))
+    (loop repeat 7 do (setf branches (split branches)))))
 
 (defmethod draw ((this sketch))
   (loop for branch across (branches this) do (display branch)))

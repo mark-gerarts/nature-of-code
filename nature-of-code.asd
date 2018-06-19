@@ -99,4 +99,6 @@
                  (:file "nature-of-code.fractals.example-7"
                   :pathname "Example 8.7: Dynamic recursive tree/sketch")
                  (:file "nature-of-code.fractals.exercise-7"
-                  :pathname "Exercise 8.7: Recursive thinning tree/sketch")))))
+                  :pathname "Exercise 8.7: Recursive thinning tree/sketch")
+                 (:file "nature-of-code.fractals.exercise-8"
+                  :pathname "Exercise 8.8: List tree/sketch")))))
