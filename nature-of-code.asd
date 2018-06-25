@@ -101,4 +101,6 @@
                  (:file "nature-of-code.fractals.exercise-7"
                   :pathname "Exercise 8.7: Recursive thinning tree/sketch")
                  (:file "nature-of-code.fractals.exercise-8"
-                  :pathname "Exercise 8.8: List tree/sketch")))))
+                  :pathname "Exercise 8.8: List tree/sketch")
+                 (:file "nature-of-code.fractals.exercise-9"
+                  :pathname "Exercise 8.9: Growing tree/sketch")))))
