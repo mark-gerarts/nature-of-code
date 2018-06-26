@@ -96,6 +96,8 @@
                 :components
                 ((:file "nature-of-code.fractals.example-1"
                   :pathname "Example 8.1: Recursive circles I/sketch")
+                 (:file "nature-of-code.fractals.example-2"
+                  :pathname "Example 8.2: Recursion twice/sketch")
                  (:file "nature-of-code.fractals.example-6"
                   :pathname "Example 8.6: Recursive tree/sketch")
                  (:file "nature-of-code.fractals.example-7"
