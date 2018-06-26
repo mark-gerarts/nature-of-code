@@ -94,7 +94,9 @@
                (:module "fractals"
                 :pathname "08. Fractals"
                 :components
-                ((:file "nature-of-code.fractals.example-6"
+                ((:file "nature-of-code.fractals.example-1"
+                  :pathname "Example 8.1: Recursive circles I/sketch")
+                 (:file "nature-of-code.fractals.example-6"
                   :pathname "Example 8.6: Recursive tree/sketch")
                  (:file "nature-of-code.fractals.example-7"
                   :pathname "Example 8.7: Dynamic recursive tree/sketch")
