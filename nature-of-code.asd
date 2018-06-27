@@ -100,6 +100,8 @@
                   :pathname "Example 8.2: Recursion twice/sketch")
                  (:file "nature-of-code.fractals.example-3"
                   :pathname "Example 8.3: Recursion four times/sketch")
+                 (:file "nature-of-code.fractals.example-4"
+                  :pathname "Example 8.4: Cantor set/sketch")
                  (:file "nature-of-code.fractals.example-6"
                   :pathname "Example 8.6: Recursive tree/sketch")
                  (:file "nature-of-code.fractals.example-7"
