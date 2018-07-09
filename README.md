@@ -72,6 +72,7 @@ Some notes:
   - [Example 8.2: Recursion twice](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.2%3A%20Recursion%20twice)
   - [Example 8.3: Recursion four times](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.3%3A%20Recursion%20four%20times)
   - [Example 8.4: Cantor set](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.4%3A%20Cantor%20set)
+  - [Example 8.5: Koch curve](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.5%3A%20Koch%20curve)
   - [Example 8.6: Recursive tree](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.6%3A%20Recursive%20tree)
   - [Example 8.7: Dynamic recursive tree](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.7%3A%20Dynamic%20recursive%20tree)
   - [Exercise 8.1: Custom recursion](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Exercise%208.1%3A%20Custom%20recursion)
