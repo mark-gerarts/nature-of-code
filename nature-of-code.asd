@@ -110,6 +110,8 @@
                   :pathname "Example 8.7: Dynamic recursive tree/sketch")
                  (:file "nature-of-code.fractals.exercise-1"
                   :pathname "Exercise 8.1: Custom recursion/sketch")
+                 (:file "nature-of-code.fractals.exercise-2"
+                  :pathname "Exercise 8.2: Koch snowflake/sketch")
                  (:file "nature-of-code.fractals.exercise-7"
                   :pathname "Exercise 8.7: Recursive thinning tree/sketch")
                  (:file "nature-of-code.fractals.exercise-8"
