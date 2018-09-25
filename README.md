@@ -63,6 +63,7 @@ Some notes:
   - [Example 2.4: Including friction](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.4%3A%20Including%20friction)
   - [Example 2.5: Fluid resistance](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.5%3A%20Fluid%20resistance)
   - [Example 2.6: Attraction](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.6%3A%20Attraction)
+  - [Example 2.7: Attraction with many movers](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Example%202.7%3A%20Attraction%20with%20many%20movers)
   - [Exercise 2.1: Helium-filled balloon](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.1%3A%20Helium-filled%20balloon)
   - [Exercise 2.3: Invisible force](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.3%3A%20Invisible%20force)
   - [Exercise 2.4: Pockets of friction](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.4%3A%20Pockets%20of%20friction)

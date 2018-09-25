@@ -1,8 +1,8 @@
-(defpackage :nature-of-code.forces.example-6
+(defpackage :nature-of-code.forces.example-7
   (:export :start-sketch)
   (:use :cl :trivial-gamekit)
   (:import-from :cl-bodge :vector-length :normalize))
-(in-package :nature-of-code.forces.example-6)
+(in-package :nature-of-code.forces.example-7)
 
 (defvar *width* 600)
 (defvar *height* 400)
@@ -30,13 +30,14 @@
    (radius
     :accessor radius)
    (mass
-    :initform 2
+    :initform (+ (random 5) 1)
     :accessor mass
     :initarg :mass)))
 
 (defmethod initialize-instance :after ((mover mover) &key)
   ;; Make the radius dependent on the mass of the mover.
-  (setf (radius  mover) (* 4 (mass mover))))
+  (setf (radius  mover) (* 4 (mass mover)))
+  (setf (location mover) (vec2 (random *width*) (random *height*))))
 
 (defmethod apply-force ((mover mover) force)
   (let ((f (div force (mass mover))))
@@ -85,25 +86,27 @@
 
 (defgame sketch ()
   ((mover
-    :accessor mover
-    :initform (make-instance 'mover :location (vec2 (/ *width* 2) 300)))
+    :accessor movers
+    :initform (loop repeat 10 collect (make-instance 'mover)))
    (attractor
     :accessor attractor
     :initform (make-instance 'attractor)))
   (:viewport-width *width*)
   (:viewport-height *height*)
-  (:viewport-title "Attraction"))
+  (:viewport-title "Attraction with many movers"))
 
 (defmethod post-initialize ((this sketch)))
 
 (defmethod draw ((this sketch))
-  (display (mover this))
+  (dolist (mover (movers this)) (display mover))
   (display (attractor this)))
 
 (defmethod act ((this sketch))
-  (with-accessors ((mover mover) (attractor attractor)) this
-    (apply-force mover (attract attractor mover))
-    (update mover)))
+  (with-accessors ((movers movers) (attractor attractor)) this
+    (dolist (mover movers)
+      (progn
+        (apply-force mover (attract attractor mover))
+        (update mover)))))
 
 (defun start-sketch ()
   (start 'sketch))
