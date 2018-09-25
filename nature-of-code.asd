@@ -81,6 +81,8 @@
                   :pathname "Example 2.4: Including friction/sketch")
                  (:file "nature-of-code.forces.example-5"
                   :pathname "Example 2.5: Fluid resistance/sketch")
+                 (:file "nature-of-code.forces.example-6"
+                  :pathname "Example 2.6: Attraction/sketch")
                  (:file "nature-of-code.forces.exercise-1"
                   :pathname "Exercise 2.1: Helium-filled balloon/sketch")
                  (:file "nature-of-code.forces.exercise-3"
