@@ -19,8 +19,9 @@ You can find these snippets in the README of each example.
 
 > **Warning:** As of the [July release](http://blog.quicklisp.org/2018/07/july-2018-quicklisp-dist-update-now.html)
 > of Quicklisp, [black-tie](https://github.com/johnfredcee/black-tie/) has been
-> removed from Quicklisp project listing. I'm doing some research for an alternative,
-> but as a temporary solution you can `cd ~/quicklisp/local-projects && git clone git@github.com:johnfredcee/black-tie.git`.
+> removed from Quicklisp the project listing. I'm doing some research for an
+> alternative, but as a temporary solution you can
+> `cd ~/quicklisp/local-projects && git clone git@github.com:johnfredcee/black-tie.git`.
 
 Some notes:
 - `trivial-gamekit` only supports 2D animations, so examples and exercises involving 3D are omitted.
