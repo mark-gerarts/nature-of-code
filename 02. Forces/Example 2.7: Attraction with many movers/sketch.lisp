@@ -98,7 +98,7 @@
 (defmethod post-initialize ((this sketch)))
 
 (defmethod draw ((this sketch))
-  (dolist (mover (movers this)) (display mover))
+  (mapc #'display (movers this))
   (display (attractor this)))
 
 (defmethod act ((this sketch))
