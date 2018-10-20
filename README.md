@@ -74,6 +74,7 @@ Some notes:
   - [Exercise 2.4: Pockets of friction](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.4%3A%20Pockets%20of%20friction)
   - [Exercise 2.5: Fluid resistance with different heights](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.5%3A%20Fluid%20resistance%20with%20different%20heights)
   - [Exercise 2.6: Falling boxes](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.6%3A%20Falling%20boxes)
+  - [Exercise 2.7: Multiple attractors](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.7%3A%20Multiple%20attractors)
 - [08. Fractals](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals)
   - [Example 8.1: Recursive circles I](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.1%3A%20Recursive%20circles%20I)
   - [Example 8.2: Recursion twice](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.2%3A%20Recursion%20twice)
