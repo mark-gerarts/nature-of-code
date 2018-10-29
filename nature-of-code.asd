@@ -96,7 +96,9 @@
                  (:file "nature-of-code.forces.exercise-6"
                   :pathname "Exercise 2.6: Falling boxes/sketch")
                  (:file "nature-of-code.forces.exercise-7"
-                  :pathname "Exercise 2.7: Multiple attractors/sketch")))
+                  :pathname "Exercise 2.7: Multiple attractors/sketch")
+                 (:file "nature-of-code.forces.exercise-9"
+                  :pathname "Exercise 2.9: Custom force/sketch")))
                (:module "fractals"
                 :pathname "08. Fractals"
                 :components
