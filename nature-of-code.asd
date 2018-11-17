@@ -99,6 +99,11 @@
                   :pathname "Exercise 2.7: Multiple attractors/sketch")
                  (:file "nature-of-code.forces.exercise-9"
                   :pathname "Exercise 2.9: Custom force/sketch")))
+               (:module "oscillation"
+                :pathname "03. Oscillation"
+                :components
+                ((:file "nature-of-code.oscillation.exercise-1"
+                  :pathname "Exercise 3.1: Rotation/sketch")))
                (:module "fractals"
                 :pathname "08. Fractals"
                 :components
