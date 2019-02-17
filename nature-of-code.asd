@@ -102,7 +102,9 @@
                (:module "oscillation"
                 :pathname "03. Oscillation"
                 :components
-                ((:file "nature-of-code.oscillation.exercise-1"
+                ((:file "nature-of-code.oscillation.example-1"
+                  :pathname "Example 3.1: Angular motion/sketch")
+                 (:file "nature-of-code.oscillation.exercise-1"
                   :pathname "Exercise 3.1: Rotation/sketch")))
                (:module "fractals"
                 :pathname "08. Fractals"
