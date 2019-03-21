@@ -1,7 +1,7 @@
 (defpackage :nature-of-code.vectors.example-5
   (:export :start-sketch)
   (:use :cl :trivial-gamekit)
-  (:import-from :cl-bodge.math :vector-length))
+  (:import-from :cl-bodge.engine :vector-length))
 (in-package :nature-of-code.vectors.example-5)
 
 (defvar *width* 800)
