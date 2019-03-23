@@ -73,6 +73,7 @@ Some notes:
   - [Exercise 2.9: Custom force](https://github.com/mark-gerarts/nature-of-code/tree/master/02.%20Forces/Exercise%202.9%3A%20Custom%20force)
 - [03. Oscillation](https://github.com/mark-gerarts/nature-of-code/tree/master/03.%20Oscillation)
   - [Example 3.1: Angular motion](https://github.com/mark-gerarts/nature-of-code/tree/master/03.%20Oscillation/Example%203.1%3A%20Angular%20motion)
+  - [Example 3.2: Forces with (arbitrary) angular motion](https://github.com/mark-gerarts/nature-of-code/tree/master/03.%20Oscillation/Example%203.2%3A%20Forces%20with%20%28arbitrary%29%20angular%20motion)
   - [Exercise 3.1: Rotation](https://github.com/mark-gerarts/nature-of-code/tree/master/03.%20Oscillation/Exercise%203.1%3A%20Rotation)
 - [08. Fractals](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals)
   - [Example 8.1: Recursive circles I](https://github.com/mark-gerarts/nature-of-code/tree/master/08.%20Fractals/Example%208.1%3A%20Recursive%20circles%20I)

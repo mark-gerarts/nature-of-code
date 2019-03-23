@@ -104,6 +104,8 @@
                 :components
                 ((:file "nature-of-code.oscillation.example-1"
                   :pathname "Example 3.1: Angular motion/sketch")
+                 (:file "nature-of-code.oscillation.example-2"
+                  :pathname "Example 3.2: Forces with (arbitrary) angular motion/sketch")
                  (:file "nature-of-code.oscillation.exercise-1"
                   :pathname "Exercise 3.1: Rotation/sketch")))
                (:module "fractals"
