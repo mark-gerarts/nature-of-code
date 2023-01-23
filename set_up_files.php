@@ -8,7 +8,7 @@
  */
 
 const GITHUB_TREE_BASE = 'https://github.com/mark-gerarts/nature-of-code/tree/master/';
-const SCREENSHOT_HOST = 'https://raw.githubusercontent.com/mark-gerarts/nature-of-code/master/screenshots/';
+const SCREENSHOT_HOST = 'screenshots/';
 
 // Returns the number of the exercise or example. E.g. "Example 1.10" => 10.
 function getExerciseNumber(string $full_name): int {
@@ -112,7 +112,7 @@ function toPackageName(string $chapter, string $exercise): string {
     return "nature-of-code.{$module_name}.{$subpackage}";
 }
 
-// "Example I.10: Hello world" => "example-10"
+// "Example I.10 - Hello world" => "example-10"
 function exerciseToSubPackageName(string $exercise): string {
     $name = explode(':', $exercise)[0];
     $name = str_replace(['.', ' '], '-', $name);
